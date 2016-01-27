@@ -20,8 +20,8 @@
  * header */
 #ifndef FIU_ENABLE
 
-#define fiu_init(flags) 0
-#define fiu_fail(name) 0
+#define fiu_init(flags) -1
+#define fiu_fail(name) -1
 #define fiu_failinfo() NULL
 #define fiu_do_on(name, action)
 #define fiu_exit_on(name)

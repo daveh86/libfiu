@@ -72,8 +72,8 @@ void *fiu_failinfo(void);
 /* These are used when fiu not enabled. They should match fiu-local.h but we
  * don't include it to avoid a circular dependency. */
 
-#define fiu_init(flags) 0
-#define fiu_fail(name) 0
+#define fiu_init(flags) -1
+#define fiu_fail(name) -1
 #define fiu_failinfo() NULL
 #define fiu_do_on(name, action)
 #define fiu_exit_on(name)
